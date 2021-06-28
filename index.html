@@ -27,45 +27,37 @@
 <body>
 
   <div class="wrapper">
-    <header class="wrapper-header">
-      <div class="wrapper-inner">
-        <img src="/images/logo.svg" alt="logo" class="wrapper-header__logo" />
-      </div>
-    </header>
-    <picture class="wrapper-poster">
-      <source media="(min-width: 900px)" srcset="/images/hero-desktop.jpg" />
-      <source media="(min-width: 320px)" srcset="/images/hero-mobile.jpg" />
-      <img src="/images/hero-desktop.jpg" alt=" hero picture" />
-    </picture>
     <div class="wrapper-content">
-      <div class="wrapper-inner">
-        <h2 class="wrapper-content__title">
-          <span class="wrapper-content__main">We're</span>
-          <span class="wrapper-content__rest">coming soon</span>
-        </h2>
-        <p class="wrapper-content__text">
-          Hello fellow shoppers! We're currently building our new fashion store.
-          Add your email below to stay up-to-date with announcements and our launch deals.
-        </p>
-        <form action="/" method="GET" class="wrapper-content__form">
-          <div class="wrapper-content__form-email">
-            <input type="email" class="wrapper-content__form-email-input" placeholder="Email Address" name="email" />
-            <span class="wrapper-content__form-email-error">
-              <img class="wrapper-content__form-email-error-icon" src="/images/icon-error.svg" alt="error icon" />
-            </span>
+        <header class="wrapper-header">
+          <img src="/images/logo.svg" class="wrapper-header__logo" alt="logo image" />
+        </header>
+        <img src="/images/hero-mobile.jpg" alt="poster" class="wrapper-hero-mobile" />
+        <main class="wrapper-main">
+          <h1 class="wrapper-main__tittle">
+            <span class="main-word">We're</span>
+            coming soon
+          </h1>
+          <p class="wrapper-main__text">
+            Hello fellow shoppers! We're currently building our new fashion store.
+            Add your email below to stay up-to-date with announcements and our launch deals.
+          </p>
+          <form action="/" method="GET" class="wrapper-main__form">
+          <div class="wrapper-main__form-input">
+            <label for="email">
+              Email Address
+              <input type="email" name="email" placeholder="Email Address" id="email" class="wrapper-main__form-input-email">
+              <img src="/images/icon-error.svg" alt="error icon" class="error-icon">
+              <small class="error-message">Please provide a valid email</small>
+            </label>
           </div>
-          <button type="submit" class="wrapper-content__form-button">
+          <button type="submit" class="wrapper-main__form-button">
             Submit
-            <img src="/images/icon-arrow.svg" alt="arrow icon" />
+            <img src="/images/icon-arrow.svg" alt="arrow icon" class="wrapper-main__form-button-icon">
           </button>
-          <div class="wrapper-content__form-error">
-            <span class="wrapper-content__form-error-message">
-              Please provide a valid email
-            </span>
-          </div>
-        </form>
-      </div>
+          </form>
+        </main>
     </div>
+    <div class="wrapper-poster"></div>
   </div>
   <footer>
     <p class="attribution">
