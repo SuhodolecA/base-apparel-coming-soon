@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+// === variables ===
+$desaturated-red: hsl(0, 36%, 70%);
+$sof-red: hsl(0, 93%, 68%);
+$dark-grayish-red: hsl(0, 6%, 24%);
+$base-gradient-color: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$secondary-gradient-color: linear-gradient( 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$primary-font-size: 1.6rem;
+// === / variables ===
+
+
+// ===common styles ===
+:root {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: $primary-font-size;
+}
+// === / common styles ===
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+    &-content {
+        flex-basis: 60%;
+        background: url('/images/bg-pattern-desktop.svg') no-repeat 50% 50%, $secondary-gradient-color;
+        background-size: cover;
+        position: relative;
+        &-header {
+            &__logo{}
+        }
+
+        &-hero-mobile {
+            display: none;
+        }
+
+        &-main {
+            &__title {}
+            &__text {}
+            &__form {}
+        }
+    }
+    &-poster {
+        flex-basis: 40%;
+        background: url('/images/hero-desktop.jpg');
+    }
+}

@@ -1,1 +1,46 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.wrapper-content {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  background: url("/images/bg-pattern-desktop.svg") no-repeat 50% 50%, linear-gradient(135deg, white, #fff5f5);
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper-content-hero-mobile {
+  display: none;
+}
+
+.wrapper-poster {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background: url("/images/hero-desktop.jpg");
+}
+/*# sourceMappingURL=style.css.map */
