@@ -146,9 +146,10 @@ body {
 
 .wrapper-content-main__form-input-email {
   width: 100%;
+  border: 0;
   border: 1px solid #dec9ce;
   border-radius: 3rem;
-  padding: 2rem 12rem 2rem 3rem;
+  padding: 2rem 14rem 2rem 3rem;
   background: rgba(255, 255, 255, 0);
   outline: none;
   font-weight: 600;
@@ -157,6 +158,18 @@ body {
 @media (max-width: 49em) {
   .wrapper-content-main__form-input-email {
     padding: 1.5rem 10rem 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-main__form-input-email {
+    padding: 1.5rem 11rem 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 25em) {
+  .wrapper-content-main__form-input-email {
+    padding: 1.5rem 12.5rem 1.5rem 2rem;
   }
 }
 
@@ -256,6 +269,12 @@ body {
           transform: translateY(-50%);
 }
 
+@media (max-width: 49em) {
+  .wrapper-content-main__form .error-icon {
+    right: 80px;
+  }
+}
+
 .wrapper-content-main__form .error-message {
   display: none;
   position: absolute;
@@ -273,7 +292,7 @@ body {
 }
 
 .wrapper-content-main__form.error .wrapper-content-main__form-input-email {
-  border: 2px solid #f96262;
+  border: 1px solid #f96262;
 }
 
 .wrapper-content-main .main-word {
