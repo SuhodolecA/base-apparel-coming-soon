@@ -28,6 +28,12 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: $primary-font-size;
 }
+
+.wrapper-inner {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
 // === / common styles ===
 
 .wrapper {
@@ -37,9 +43,10 @@ body {
         flex-basis: 60%;
         background: url('/images/bg-pattern-desktop.svg') no-repeat 50% 50%, $secondary-gradient-color;
         background-size: cover;
-        position: relative;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
         &-header {
-            &__logo{}
+            margin-bottom: 13rem;
         }
 
         &-hero-mobile {
@@ -47,13 +54,117 @@ body {
         }
 
         &-main {
-            &__title {}
-            &__text {}
-            &__form {}
+            &__title {
+                font-size: 6rem;
+                text-transform: uppercase;
+                letter-spacing: 1.3rem;
+                line-height: 1.1;
+                margin-bottom: 2rem;
+            }
+            &__text {
+                line-height: 2.5rem;
+                color: $desaturated-red;
+                margin-bottom: 2.5rem;
+            }
+
+            &__form {
+                position: relative;
+                &-input {
+                    position: relative;
+
+                    label {
+                        position: absolute;
+                        opacity: 0;
+                    }
+
+                    &-email {
+                        width: 100%;
+                        border: 1px solid hsl(346, 24%, 83%);
+                        border-radius: 3rem;
+                        padding: 2rem 12rem 2rem 3rem;
+                        background: hsla(100, 100%, 100%, 0);
+                        outline: none;
+                        font-weight: 600;
+
+                        &::placeholder {
+                            color: $desaturated-red;
+                        }
+
+                        &:focus::placeholder {
+                            color: $desaturated-red;
+                            opacity: 0;
+                        }
+
+                        &:focus {
+                            box-shadow: inset 0px 0px 4px 2px hsl(348, 17%, 83%);
+                        }
+                    }
+                }
+                &-button {
+                    position: absolute;
+                    padding: 1.7rem 4.4rem;
+                    border-radius: 3rem;
+                    border: 0;
+                    background: $base-gradient-color;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer;
+                    box-shadow: -5px 23px 12px 0px hsla(0, 36%, 70%, .15);
+                    outline: none;
+                    span {
+                        position: absolute;
+                        font-size: 1px;
+                        opacity: 0;
+                    }
+
+                    &:focus,
+                    &:hover {
+                        box-shadow: -5px 23px 12px 0px hsla(0, 36%, 70%, .15),
+                                      inset 0px 0px 3px 2px hsl(328, 7%, 63%);
+                    }
+
+                }
+
+                .error-icon {
+                    display: none;
+                    position: absolute;
+                    top: 50%;
+                    right: 120px;
+                    transform: translateY(-50%);
+                }
+
+                .error-message {
+                    display: none;
+                    position: absolute;
+                    color: $sof-red;
+                    padding-left: 3rem;
+                    margin-top: 1rem;
+                }
+
+                &.error {
+
+                    .error-icon {
+                        display: inline;
+                    }
+    
+                    .error-message {
+                        display: block;
+                    }
+                }
+
+                &.error &-input-email {
+                    border: 2px solid $sof-red;
+                }
+            }
+
+            .main-word {
+                font-weight: 300;
+                color: $desaturated-red;
+            }
         }
     }
     &-poster {
         flex-basis: 40%;
-        background: url('/images/hero-desktop.jpg');
+        background: url('/images/hero-desktop.jpg') no-repeat 50% 50% / cover;
     }
 }

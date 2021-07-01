@@ -28,12 +28,15 @@
 
   <div class="wrapper">
     <div class="wrapper-content">
+      <div class="wrapper-inner">
         <header class="wrapper-content-header">
-          <img src="/images/logo.svg" class="wrapper-content-header__logo" alt="logo image" />
+          <a href="#" class="wrapper-content-header__logo">
+            <img src="/images/logo.svg" alt="logo image" />
+          </a>
         </header>
         <img src="/images/hero-mobile.jpg" alt="poster" class="wrapper-content-hero-mobile" />
         <main class="wrapper-content-main">
-          <h1 class="wrapper-content-main__tittle">
+          <h1 class="wrapper-content-main__title">
             <span class="main-word">We're</span>
             coming soon
           </h1>
@@ -42,20 +45,22 @@
             Add your email below to stay up-to-date with announcements and our launch deals.
           </p>
           <form action="/" method="GET" class="wrapper-content-main__form">
-          <div class="wrapper-content-main__form-input">
-            <label for="email">
-              Email Address
-              <input type="email" name="email" placeholder="Email Address" id="email" class="wrapper-content-main__form-input-email">
-              <img src="/images/icon-error.svg" alt="error icon" class="error-icon">
+            <div class="wrapper-content-main__form-input">
+              <label for="email">
+                Email Address
+              </label>
+              <input type="email" name="email" placeholder="Email Address" id="email"
+                class="wrapper-content-main__form-input-email" autocomplete="off" required />
+              <img src="/images/icon-error.svg" alt="error icon" class="error-icon" />
               <small class="error-message">Please provide a valid email</small>
-            </label>
-          </div>
-          <button type="submit" class="wrapper-content-main__form-button">
-            Submit
-            <img src="/images/icon-arrow.svg" alt="arrow icon" class="wrapper-content-main__form-button-icon">
-          </button>
+            </div>
+            <button type="submit" class="wrapper-content-main__form-button">
+              <span>Submit</span>
+              <img src="/images/icon-arrow.svg" alt="arrow icon" class="wrapper-content-main__form-button-icon" />
+            </button>
           </form>
         </main>
+      </div>
     </div>
     <div class="wrapper-poster"></div>
   </div>

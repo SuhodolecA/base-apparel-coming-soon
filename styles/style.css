@@ -19,6 +19,12 @@ body {
   font-size: 1.6rem;
 }
 
+.wrapper-inner {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,16 +37,158 @@ body {
       flex-basis: 60%;
   background: url("/images/bg-pattern-desktop.svg") no-repeat 50% 50%, linear-gradient(135deg, white, #fff5f5);
   background-size: cover;
-  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+}
+
+.wrapper-content-header {
+  margin-bottom: 13rem;
 }
 
 .wrapper-content-hero-mobile {
   display: none;
 }
 
+.wrapper-content-main__title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+
+.wrapper-content-main__text {
+  line-height: 2.5rem;
+  color: #ce9797;
+  margin-bottom: 2.5rem;
+}
+
+.wrapper-content-main__form {
+  position: relative;
+}
+
+.wrapper-content-main__form-input {
+  position: relative;
+}
+
+.wrapper-content-main__form-input label {
+  position: absolute;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-input-email {
+  width: 100%;
+  border: 1px solid #dec9ce;
+  border-radius: 3rem;
+  padding: 2rem 12rem 2rem 3rem;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  font-weight: 600;
+}
+
+.wrapper-content-main__form-input-email::-webkit-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper-content-main__form-input-email:-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper-content-main__form-input-email::-ms-input-placeholder {
+  color: #ce9797;
+}
+
+.wrapper-content-main__form-input-email::placeholder {
+  color: #ce9797;
+}
+
+.wrapper-content-main__form-input-email:focus::-webkit-input-placeholder {
+  color: #ce9797;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-input-email:focus:-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-input-email:focus::-ms-input-placeholder {
+  color: #ce9797;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-input-email:focus::placeholder {
+  color: #ce9797;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-input-email:focus {
+  -webkit-box-shadow: inset 0px 0px 4px 2px #dbcccf;
+          box-shadow: inset 0px 0px 4px 2px #dbcccf;
+}
+
+.wrapper-content-main__form-button {
+  position: absolute;
+  padding: 1.7rem 4.4rem;
+  border-radius: 3rem;
+  border: 0;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  -webkit-box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15);
+          box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15);
+  outline: none;
+}
+
+.wrapper-content-main__form-button span {
+  position: absolute;
+  font-size: 1px;
+  opacity: 0;
+}
+
+.wrapper-content-main__form-button:focus, .wrapper-content-main__form-button:hover {
+  -webkit-box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15), inset 0px 0px 3px 2px #a79aa1;
+          box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15), inset 0px 0px 3px 2px #a79aa1;
+}
+
+.wrapper-content-main__form .error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.wrapper-content-main__form .error-message {
+  display: none;
+  position: absolute;
+  color: #f96262;
+  padding-left: 3rem;
+  margin-top: 1rem;
+}
+
+.wrapper-content-main__form.error .error-icon {
+  display: inline;
+}
+
+.wrapper-content-main__form.error .error-message {
+  display: block;
+}
+
+.wrapper-content-main__form.error .wrapper-content-main__form-input-email {
+  border: 2px solid #f96262;
+}
+
+.wrapper-content-main .main-word {
+  font-weight: 300;
+  color: #ce9797;
+}
+
 .wrapper-poster {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
-  background: url("/images/hero-desktop.jpg");
+  background: url("/images/hero-desktop.jpg") no-repeat 50% 50%/cover;
 }
 /*# sourceMappingURL=style.css.map */
