@@ -32,6 +32,12 @@ body {
   min-height: 100vh;
 }
 
+@media (max-width: 49em) {
+  .wrapper {
+    display: block;
+  }
+}
+
 .wrapper-content {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -41,12 +47,56 @@ body {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 49em) {
+  .wrapper-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .wrapper-content {
+    padding-bottom: 7rem;
+  }
+}
+
 .wrapper-content-header {
   margin-bottom: 13rem;
 }
 
+@media (max-width: 49em) {
+  .wrapper-content-header {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-header img {
+    width: 13rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .wrapper-content-header img {
+    width: 11rem;
+  }
+}
+
 .wrapper-content-hero-mobile {
   display: none;
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-hero-mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-main {
+    margin-top: 6rem;
+    text-align: center;
+  }
 }
 
 .wrapper-content-main__title {
@@ -57,6 +107,18 @@ body {
   margin-bottom: 2rem;
 }
 
+@media (max-width: 49em) {
+  .wrapper-content-main__title {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .wrapper-content-main__title {
+    font-size: 4rem;
+  }
+}
+
 .wrapper-content-main__text {
   line-height: 2.5rem;
   color: #ce9797;
@@ -65,6 +127,12 @@ body {
 
 .wrapper-content-main__form {
   position: relative;
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-main__form {
+    margin: 0 1.5rem;
+  }
 }
 
 .wrapper-content-main__form-input {
@@ -86,20 +154,41 @@ body {
   font-weight: 600;
 }
 
+@media (max-width: 49em) {
+  .wrapper-content-main__form-input-email {
+    padding: 1.5rem 10rem 1.5rem 2rem;
+  }
+}
+
 .wrapper-content-main__form-input-email::-webkit-input-placeholder {
-  color: #ce9797;
+  color: #dec9ce;
 }
 
 .wrapper-content-main__form-input-email:-ms-input-placeholder {
-  color: #ce9797;
+  color: #dec9ce;
 }
 
 .wrapper-content-main__form-input-email::-ms-input-placeholder {
-  color: #ce9797;
+  color: #dec9ce;
 }
 
 .wrapper-content-main__form-input-email::placeholder {
-  color: #ce9797;
+  color: #dec9ce;
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-main__form-input-email::-webkit-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .wrapper-content-main__form-input-email:-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .wrapper-content-main__form-input-email::-ms-input-placeholder {
+    font-size: 1.2rem;
+  }
+  .wrapper-content-main__form-input-email::placeholder {
+    font-size: 1.2rem;
+  }
 }
 
 .wrapper-content-main__form-input-email:focus::-webkit-input-placeholder {
@@ -139,6 +228,12 @@ body {
   -webkit-box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15);
           box-shadow: -5px 23px 12px 0px rgba(206, 151, 151, 0.15);
   outline: none;
+}
+
+@media (max-width: 49em) {
+  .wrapper-content-main__form-button {
+    padding: 1.2rem 2.7rem;
+  }
 }
 
 .wrapper-content-main__form-button span {
@@ -190,5 +285,11 @@ body {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
   background: url("/images/hero-desktop.jpg") no-repeat 50% 50%/cover;
+}
+
+@media (max-width: 49em) {
+  .wrapper-poster {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

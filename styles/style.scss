@@ -39,27 +39,71 @@ body {
 .wrapper {
     display: flex;
     min-height: 100vh;
+
+    @media (max-width: 49em) {
+        display: block;
+     }
     &-content {
         flex-basis: 60%;
         background: url('/images/bg-pattern-desktop.svg') no-repeat 50% 50%, $secondary-gradient-color;
         background-size: cover;
         padding-top: 6rem;
         padding-bottom: 2rem;
+
+        @media (max-width: 49em) {
+            padding-top: 3rem;
+        }
+
+        @media (max-width: 35em) {
+            padding-bottom: 7rem;
+        }
+
         &-header {
             margin-bottom: 13rem;
+
+            @media (max-width: 49em) {
+                margin-bottom: 3rem;
+            }
+
+            img {
+                @media (max-width: 49em) {
+                    width: 13rem;
+                }
+
+                @media (max-width: 35em) {
+                    width: 11rem;
+                 }
+            }
         }
 
         &-hero-mobile {
             display: none;
+
+            @media (max-width: 49em) {
+                display: block;
+                width: 100%;
+            }
         }
 
         &-main {
+            @media (max-width: 49em) {
+               margin-top: 6rem;
+               text-align: center;
+            }
             &__title {
                 font-size: 6rem;
                 text-transform: uppercase;
                 letter-spacing: 1.3rem;
                 line-height: 1.1;
                 margin-bottom: 2rem;
+
+                @media (max-width: 49em) {
+                   font-size: 5rem;
+                }
+
+                @media (max-width: 35em) {
+                    font-size: 4rem;
+                 }
             }
             &__text {
                 line-height: 2.5rem;
@@ -69,6 +113,9 @@ body {
 
             &__form {
                 position: relative;
+                @media (max-width: 49em) {
+                   margin: 0 1.5rem;
+                 }
                 &-input {
                     position: relative;
 
@@ -86,8 +133,16 @@ body {
                         outline: none;
                         font-weight: 600;
 
+                        @media (max-width: 49em) {
+                            padding: 1.5rem 10rem 1.5rem 2rem;
+                         }
+
                         &::placeholder {
-                            color: $desaturated-red;
+                            color: hsl(346, 24%, 83%);
+                            @media (max-width: 49em) {
+                                font-size: 1.2rem;
+                            }
+                            
                         }
 
                         &:focus::placeholder {
@@ -111,6 +166,10 @@ body {
                     cursor: pointer;
                     box-shadow: -5px 23px 12px 0px hsla(0, 36%, 70%, .15);
                     outline: none;
+
+                    @media (max-width: 49em) {
+                        padding: 1.2rem 2.7rem;
+                     }
                     span {
                         position: absolute;
                         font-size: 1px;
@@ -166,5 +225,9 @@ body {
     &-poster {
         flex-basis: 40%;
         background: url('/images/hero-desktop.jpg') no-repeat 50% 50% / cover;
+
+        @media (max-width: 49em) {
+           display: none;
+        }
     }
 }
