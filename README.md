@@ -1,5 +1,7 @@
 # Frontend Mentor - Base Apparel coming soon page
 
+[Link to solution](https://base-apparel-coming-soon-kcr91e8n9-suhodoleca.vercel.app/)
+
 ![Design preview for the Base Apparel coming soon page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
